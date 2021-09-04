@@ -230,7 +230,7 @@
 
 	<hr>
 
-	<h2>CAPÍTULO 8 - LISTAS COM HTML5</h2>
+	<h2>CAPÍTULO 9 - LISTAS COM HTML5</h2>
 	<h3>Listas de definições</h3>
 	<pre><code>
 		&ltdl&gt
@@ -246,7 +246,7 @@
 
 	<hr>
 
-	<h2>CAPÍTULO 9 - LIGAÇÕES EM TODA PARTE</h2>
+	<h2>CAPÍTULO 10 - LIGAÇÕES EM TODA PARTE</h2>
 	<p>Os mecanismos de busca utilizam os hyperlinks de sites para encontrar outros sites</p>
 
 	<ul>
@@ -269,11 +269,61 @@
 
 	<hr>
 
-	<h2>CAPÍTULO 10 - IMAGENS DINÂMICAS, ÁUDIO E VÍDEO</h2>
+	<h2>CAPÍTULO 11 - IMAGENS DINÂMICAS, ÁUDIO E VÍDEO</h2>
 
+	<h3>Imagens Dinâmicas</h3>
+	<p>O tamanho em bytes da imagem vai ser constante. Sempre use a imagem do tamanho exato necessário, sites demorados para carregar não retem os usuários desfavorecendo o site nos mecânismos de busca.</p>
 
+	<!-- Carrega a pequena até 750px, a média até 1050px e a grande em maiores larguras -->
+	<!-- Também pode ser feito com larguras mínimas, sempre mantendo a ordem como abaixo -->
+	<picture>
+		<source media="(max-width:750px)" srcset="img/fotop.png" type="image/png">
+		<source media="(max-width: 1050px)" srcset="img/fotom.png" type="image/png">
+		<img src="img/fotog.png" alt="imagem grande">
+	</picture>
 
+	<p>Para saber qual o tipo de mediatype deve ser usado no atributo "type" pode ser utilizado o site: <a href="https://www.iana.org/assignments/media-types/media-types.xhtml">iana.org</a></p>
 
+	<h3>Áudios</h3>
+
+	<!-- preload - indica se o audio será pré-carregado ou não -->
+	<!-- preload="metadata" - carrega apenas informações sobre o arquivo -->
+	<!-- preload="none" - não carrega nada até o usuário clicar no play -->
+	<!-- preload="auto" (default) - carrega tudo no momento em que o site é aberto -->
+	<!-- controls - apresenta o player na tela -->
+	<!-- autoplay - inicia a reprodução assim que a página é carregada-->
+	<!-- loop - audio fica repetindo -->	
+	<audio src="audio/fast_run.mp3" preload="none" controls></audio>
+	<!-- utilize a tag <source>  para definir também outros formatos de audio caso a primeira opção não seja reconhecida pelo navegador (como feito na tag <pictures>) -->
+
+	<h3>Vídeos</h3>
+	<p>É prudente ter o vídeo em vários formatos, para sempre se adaptar aos navegadores. Sempre use vídeos hospedados externamente (youtube ou vimeo) isso não gera um gasto absurdo de banda no seu site</p>
+
+	<!--  Formatos suportados pelos navegadores: MPEG, WEBM e OGG-->
+
+	<!-- widith - indica a larguea que o vídeo vai ter na tela -->
+	<!-- poster - configura imagem de capa do vídeo -->
+	<!-- controls - configura os players para aparecerem na tela -->
+	<!-- autoplay - configura o vídeo para iniciar automáticamente -->
+
+	<h4>Vídeo hospedado localmente</h4>
+	<video src="video/video.m4v" width="560" controls></video>
+	<small>Vídeo de Space Space no Pexels</small>
+	<!-- utilize a tag <source> para definir também outros formatos de vídeo caso a primeira opção não seja reconhecida pelo navegador (como feito na tag <pictures>) -->
+
+	<h4>Vídeo hospedado no youtube</h4>
+	<!-- Apenas copie e cole o código disponibilizado no vídeo do youtube atravéz da opção compartilhar > incorporar -->
+	<!-- Vídeos do youtube ajudam no google, visto que os dois pertencem a mesma empresa -->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/yltlJEdSAHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<hr>
+
+	<h2>CAPÍTULO 12 - INTRODUÇÃO ÀS CSS</h2>
+	<ul>
+		<li>CSS externo = Use sempre que puder</li>
+		<li>CSS interno = Use para pequenas configurações e páginas isoladas</li>
+		<li>CSS inline = apenas para configurações únicas e pontuais. Evitar ao máximo</li>
+	</ul>
 
 </body>
 
