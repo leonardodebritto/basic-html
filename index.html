@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Implentação do fav-icon -->
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<title>Um pouco sobre HTML</title>
+</head>
+
+<body>
+
+	<h1>UM POUCO DE HTML BÁSICO</h1>
+	<hr>
+	<P>Olá, me chamo Leonardo, é um prazer conhecê-lo!</P>
+	<p>
+		Nessa página, vou deixar registrado um pouco do meu aprendizado sobre a linguagem de marcação HTML, mais
+		precisamente os conhecimentos adquiridos no módulo 1 de 5 do curso de HTML5 e CSS3 do professor Gustavo Guanabara,
+		algumas das imagens deste documentos foram retiradas do seu curso.
+	</p>
+	<hr>
+
+	<h2>CAPÍTULO 1 - HISTÓRIA DA INTERNET</h2>
+	<Ol>
+		<li>Guerra fria</li>
+		<li>EUA temem ataque russo às bases militares</li>
+		<li>Se uma base fosse atacada se perderiam as informações sigilosas</li>
+		<li>Precisavam criar uma rede para transmitir esses dados a outra base se necessário</li>
+		<li>Precisavam criar uma rede para transmitir esses dados a outra base se necessário</li>
+		<li>Criação da ARPANET</li>
+		<li>Transmitiam as informações divididas em pacotes e remontavam a mensagem original posteriormente</li>
+		<li>Após período da guerra, EUA permite entrada de pesquisadores de universidades na ARPANET</li>
+		<li>Surgem dificuldades em administrar o sistema com tantas universidades envolvidas</li>
+		<li>Sistema é dividido entre a MILNET, focada no militar e a nova ARPANET, para localidades não militares</li>
+		<li>Ocorre o desenvolvimento da ARPANET com a entrada de pesquisadores, alunos e mais pessoas</li>
+		<li>A rede aumenta de tamanho</li>
+		<li>Empresas entram na jogada</li>
+		<li>Com tantas entradas na rede, protocolo NCP deixa de ser eficiente</li>
+		<li>Criam o TCP/IP</li>
+		<li>Tim Berners-Lee cria a world wide web, a HTML e o protocolo HTTP em 1992</li>
+		<li>Netscape cria o protocolo HTTPS possibilitando envio de dados criptografados para transações comerciais</li>
+	</Ol>
+
+	<hr>
+
+	<h2>CAPÍTULO 2 - COMO A INTERNET FUNCIONA</h2>
+
+	<h3>Sinal, Roteador, Cliente e Servidor</h3>
+	<ul>
+		<li>A internet é uma rede gigantesca de ligação entre outras redes ao redor do mundo</li>
+		<li>A maioria das transmissões entre os continentes é realizada por cabos submarinos</li>
+		<li><a href="https://www.submarinecablemap.com/" target="_blank">Submarine Cable Map</a></li>
+		<li>Já do litoral para dentro do continente a transmissão é feita por satélites e balões</li>
+		<li>No continente a sistema se liga a outros sistemas de comunicação como o de telefonia</li>
+		<li>Esses sistemas transmitem sinais diferentes</li>
+		<li>É realizado a conversão do formato das ondas de telefnia por exemplo para as ondas aceitas pelo computador
+			(bites)</li>
+		<li>Essa conversão é feita pelo modem que <strong>mo</strong>dula e <strong>dem</strong>odula o sinal</li>
+		<li>Roteadores definem a melhor rota para os dados, evitando congestionamentos</li>
+		<li>Cliente conecta no servidor</li>
+		<li>Porém, como o a internet descobre qual servidor do mundo esta a informação?</li>
+		<li>O protocolo TCP/IP garante que todas as comunicações seguem o mesmo padrão</li>
+		<li>permite dispositivos diferentes, com tecnologias diferentes trocarem informações</li>
+		<li>O TCP/IP conecta os nós, que nada mais são do que os pontos conectados a rede</li>
+		<li>Ao se conectar a internet você recebe um endereço de IP</li>
+		<li>O DNS, Domain Name System é como uma lista dinâmica gigantesca que liga os IPS aos nomes dos sites</li>
+		<li>Cliente tenta acessar um servidor</li>
+		<li>Internet verifica no DNS qual o IP atrelado ao nome do site digitado</li>
+		<li>O navegador pode então acessar o endereço correto</li>
+		<li>A solicitação chega ao servidor e ele envia uma copia do documento para o cliente</li>
+	</ul>
+
+	<h3>Domínio e Hospedagem</h3>
+	<ul>
+		<li>A parte principal de uma URL (Uniform Resource Locator) é o domínio.</li>
+		<li>Domínio: curitiba.pr.gov.br</li>
+		<li>O <em>.br</em> é o TLD, Top Level Domain</li>
+		<li>GTLD são TLDs genéricos, sem indicação de país, exemplos: .com, .gov, .net, etc.</li>
+		<li>ccTLD (Country Code) são as TLDs com designação de países, exemplos: .br, .us, etc.</li>
+		<li>O www é um sub-domínio e podem haver outros como images.google.com ou mail.google.com</li>
+		<li>O www não faz parte do domínio</li>
+		<li>Uma URL também tem o protocolo (http ou https)</li>
+		<li>O https possui a segurança por SSL (serviço de criptografia de dados)</li>
+	</ul>
+
+	<h3>Hospedagem e Data Centers</h3>
+	<p>Os data centers são a infraestrutura necessária para manter servidores sempre ligados e disponíveis e forncecer
+		espação para o armazenamento das informações</p>
+
+	<hr>
+
+	<h2>CAPÍTULO 3 - COMO FUNCIONA A HTML E AS CSS</h2>
+
+	<h3>Tags HTML</h3>
+	<ul>
+		<li>Não se programa em HTML</li>
+		<li>HTML não funciona com instruções e sim com marcações em tags</li>
+		<li>HTML = Conteúdo</li>
+		<li>CSS = Estilo</li>
+		<li>JAVASCRIPT = Interação</li>
+		<li>Em &lta href="destino.html"&gtExemplo&lt/a&gt</li>
+		<li>href é um parâmetro</li>
+		<li>destino.html é um valor do parâmetro</li>
+		<li>Exemplo é o conteúdo</li>
+	</ul>
+
+	<h3>Sletores CSS</h3>
+
+	<pre><code>
+	P {
+		color: blue;
+	}
+	</code></pre>
+	
+	<li><em>p</em> é o seletor</li>
+	<li><em>color:blue</em> é a declaração</li>
+	<li><em>color</em> é a propriedade</li>
+	<li><em>blue</em> é o valor</li>
+
+	<hr>
+
+	<h2>CAPÍTULO 4 - PRIMEIROS PASSOS COM HTML5</h2>
+	<p>Esse capítulo apenas se trata de algumas dicas e informações sobre configuraçao de editores de vídeos</p>
+
+	<hr>
+
+	<h2>CAPÍTULO 5 - CARACTERES, PARÁGRAFOS E	QUEBRAS DE LINHA</h2>
+	<ul>
+		<li>Os caracteres especiais para alguns símbolos são chamados de <em>HTML entities</em></li>
+		<li>Exemplos: &reg, &copy, etc.</li>
+		<li>Para inserir emojis é só acessar o <a href="https://emojipedia.org">emojipedia</a></li>
+		<li>Procure pelo <strong>codepoint</strong> do emoji e subistitua o U+ por &#x</li>
+		<li>&#x1F92A &#x1F92A &#x1F92A &#x1F92A &#x1F92A &#x1F92A &#x1F92A &#x1F92A &#x1F92A &#x1F92A</li>
+	</ul>
+
+	<hr>
+
+	<h2>CAPÍTULO 6 - IMAGENS E FAVICONS</h2>
+
+	<h3>Direitos autorais</h3>
+	<h4>Sites para compra de imagens:</h4>
+	<ul>
+		<li><a href="https://stockphoto.com/">iStockPhoto</a></li>
+		<li><a href="https://br.depositphotos.com/">DepositPhotos</a></li> 
+		<li><a href="https://www.shutterstock.com/pt/">ShutterStock</a></li>
+	</ul>
+	<h4>Sites com imagens livres e gratuitas:</h4>
+	<ul>
+		<li><a href="https://unsplash.com/"></a>Unsplash</li>
+		<li><a href="https://www.pexels.com/pt-br/"></a>Pexels</li>
+		<li><a href="https://www.freepik.es/"></a>FreePik</li>
+		<li><a href="https://www.rawpixel.com/"></a>Rawpixel</li>
+		<li><a href="https://pixabay.com/pt/"></a>Pixabay</li>
+		<li><a href="https://libreshot.com/"></a>Libreshot</li>
+	</ul>
+
+	<h3>Formato de imagens</h3>
+	<ul>
+		<li>JPEG - tamanho reduzido, ocupam pouco espaço</li>
+		<li>PNG - capacidade de opacidade, deixando fund transparente</li>
+	</ul>
+	<p>Sempre usar .jpeg para as imagens, com compactação entra 30% a 50% para economizar espaço e processamento. PNG só deve ser utilizado quando houver a necessidade do fundo transparente</p>
+
+	<h3>Tamanho / resolução</h3>
+	<p>A regra é: Sempre use as imagens com o tamanho necessário. Se precisa ser 200x200 use uma imagem com 200x200, isso economiza espaço e o google valoriza sites rápidos e leves em sua busca</p>
+
+	<h3>Texto alternativo da imagem (Parâmetro alt="")</h3>
+	<p>Auxiliam na indexação do site no google e na acessibilidade. O ideal é ser objetivo. O texto também auxilia o google a saber o que tem na sua foto e exibi-la no google imagens</p>
+
+	<h3>Ícones Favicon</h3>
+	<ul>
+		<li>Baixar ícones prontos: <a href="https://iconarchive.com/">iconarchive</a> </li>
+		<li>Criar ícones do zero: <a href="https://www.favicon.cc/">favicon.cc</a></li>
+		<li>Ciar ícone a partir de imagem: <a href="https://favicon.io/">favicon.io</a></li>
+	</ul>
+	<p>A recomendação é utilizar os favicons em formato .ico. Existe o próprio png e o svg que é o melhor de todos, porém nem todo navegador é compátivel com ele</p>
+
+	<hr>
+
+	<h2>CAPÍTULO 7 - HIERARQUIA DE TÍTULOS</h2>
+
+	<p>Sempre divida os textos em títulos e subtítulos, isso torna a leitura menos cansativa. Os títulos no HTML (h1, h2, h3, h4, h5 e h6) devem ser usados justamente como uma hierarquia, onde h6 pertence a h5, h5 pertence a h4 e assim por diante, para favorecer a semântica.</p>
+
+	<h1>
+		H1 TÍTULO
+		<h2>
+			H2 SUBTÍTULO DE H1
+			<h3>
+				H3 SUBTÍTULO DE H2
+				<h4>
+					H4 SUBTÍTULO DE H3
+					<h5>
+						H5 SUBTÍTULO DE H4
+						<h6>
+							H6 SUBTÍTULO DE H5
+						</h6>
+					</h5>
+				</h4>
+			</h3>
+		</h2>
+	</h1>
+
+	<hr>
+
+	<h2>CAPÍTULO 8 - FORMATAÇÃO DE TEXTOS</h2>
+	<p>Semântica é o siginificado dos vocábulos por oposição à sua forma.</p>
+	<p>Siginificado de algumas tags semânticas:</p>
+	<ul type="square">
+		<li>&ltstrong&gt : O termo possui <strong>força</strong> dentro da frase</li>
+		<li>&ltem&gt : O termo deve ser <em>enfatizado</em></li>
+		<li>&ltmark&gt : O termo deve ser <mark>mais enfatizado ainda</mark></li>
+		<li>&ltsmall&gt : Normalmente utilizado para as <small>letras pequenas</small>, como em contratos</li>
+		<li>&ltdel&gt : Siginifica texto que pode ser lido, porém pode ser <del>também deixado para lá</del> desconsiderado</li>
+		<li>&ltins&gt : O oposto do &ltdel&gt, trata-se de um texto que <ins>deve ser lido e prestado atenção</ins></li>
+		<li>&ltsup&gt : X<sup>5</sup></li>
+		<li>&ltsub&gt : H<sub>2</sub>O</li>
+		<li>&ltcode&gt : Indicam ao navegador que se trata de um código</li>
+		<li>&ltpre&gt : Tag que ajuda na formatação do &ltcode&gt mantendo o texto pré formatado, indicando por exemplo a identação</li>
+		<li>&ltq&gt : Para indicar <q>citações geralmente no meio de parágrafos.</q> São trechos de textos escritos ou ditos por outra pessoa</li>
+		<li>&lblockquote&gt : <blockquote>Para citações mais longas que normalmente possuem um parágrafo apenas para si.</blockquote></li>
+		<li>&ltabbr title="Hyper Text Markup Language"e&gtHTML&lt/abbr&gt : Para deixar claro ao navegador e ao usuário  siginificado de uma sigla: <abbr title="Hyper Text Markup Language">HTML</abbr></li>
+	</ul>
+	<p>
+		É também possível juntar tags dentro de outras, potêncializando os efeitos. Exemplo: &ltstrong&gt&ltemg&gt&lt/em&gt&lt/strong&gt geram um texto <strong><em>com negrito (força) e itálico (ênfase).</em></strong>
+	</p>
+
+	<hr>
+
+	<h2>CAPÍTULO 8 - LISTAS COM HTML5</h2>
+	<h3>Listas de definições</h3>
+	<pre><code>
+		&ltdl&gt
+			&ltdt&gtHTML&lt/dt&gt
+			&ltdd&gtLinguagem de marcação utilizada para criar conteúdo de sites&lt/dd&gt
+		&lt/dl&gt	
+	</code></pre>
+	<p>Como se fosse um dicionário, com os termos e suas descrições, esse tipo de ista associa a descrição ao termo favorecendo o site nos mecânimos de busca</p>
+	<dl>
+		<dt>HTML</dt>
+		<dd>Linguagem de marcação utilizada para criar conteúdo de sites</dd>
+	</dl>
+
+	<hr>
+
+	<h2>CAPÍTULO 9 - LIGAÇÕES EM TODA PARTE</h2>
+	<p>Os mecanismos de busca utilizam os hyperlinks de sites para encontrar outros sites</p>
+
+	<ul>
+		<li>Atributo hreflang - Define a linguagem do site do link para auxiliar possíveis traduções</li>
+		<li>Atributo target - Para definir se a página va abrir em nova aba ou não</li>
+		<li>
+			Atributo rel
+			<li>Valor "next" - Indica que o link é para a próxima parte do documento atual</li>
+			<li>Valor "prev" - Indica que o link é para a parte anterior do documento atual</li>
+			<li>Valor "author" - Indica que o link é para o site do autor do artigo atual"</li>
+			<li>Valor "external" - Indica que o link é para outro site que não faz parte do site atual</li>
+			<li>Valor "nofollow" - Indica que o link é para outro site não endossado, como um link pago</li>
+		</li>
+		<li>Atributo dowload - Difine o download do arquivo definido</li>
+	</ul>
+
+	<a href="https://www.linkedin.com/in/leonardo-de-britto-843107103/" hreflang="pt-br" target="_blank" rel="author">Linkedin - Leonardo de Britto</a>
+	<br>
+	<a href="doc/leo_portfolio.pdf" download="leo_portfolio.pdf" type="application/pdf">Faça o download do meu currículo</a>
+
+	<hr>
+
+	<h2>CAPÍTULO 10 - IMAGENS DINÂMICAS, ÁUDIO E VÍDEO</h2>
+
+
+
+
+
+</body>
+
+</html>
